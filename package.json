@@ -1,0 +1,14 @@
+{
+  "name": "moveai-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "install:all": "npm.cmd --prefix server install && npm.cmd --prefix client install",
+    "start": "node server/app.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
