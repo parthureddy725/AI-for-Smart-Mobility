@@ -9,14 +9,15 @@ MoveAI unifies predictive traffic intelligence, dynamic vehicle capacity, multi-
 ## 🌟 Key Highlights & Differentiators
 
 Unlike traditional GPS navigation systems that only draw lines between two points, MoveAI demonstrates multi-criteria **AI decision-making**:
-$$\text{Input} \longrightarrow \text{Analyze} \longrightarrow \text{Predict} \longrightarrow \text{Optimize} \longrightarrow \text{Explain} \longrightarrow \text{Recommend}$$
+
+**Input** ➔ **Analyze** ➔ **Predict** ➔ **Optimize** ➔ **Explain** ➔ **Recommend**
 
 1. **🧠 Constrained Fleet Dispatch Optimizer (Flagship Workflow)**:
    - Takes 5 delivery orders with custom weights (kg), urgency deadlines, and priorities.
    - Solves the Capacitated Vehicle Routing Problem (CVRP) across EV and Diesel fleets.
    - Outputs:
-     - 🚚 **Vehicle 1 (Tata Ace EV)** $\rightarrow$ Deliveries A $\rightarrow$ C $\rightarrow$ D
-     - 🚚 **Vehicle 2 (Ashok Leyland)** $\rightarrow$ Deliveries B $\rightarrow$ E
+     - 🚚 **Vehicle 1 (Tata Ace EV)** ➔ Deliveries A ➔ C ➔ D
+     - 🚚 **Vehicle 2 (Ashok Leyland)** ➔ Deliveries B ➔ E
      - **Estimated Travel Time**: `2h 18m`
      - **Estimated Fuel Cost**: `₹420`
      - **Distance Saved**: `18.6 km`
@@ -26,7 +27,7 @@ $$\text{Input} \longrightarrow \text{Analyze} \longrightarrow \text{Predict} \lo
    - Compares transit duration, fuel burn, signal delay idle, and CO₂ footprint with an explicit "Reason for Recommendation".
 3. **🚦 Real-Time Traffic & Disruption Forecast**:
    - Time-of-day rush hour multiplier & weather adjustment.
-   - Live bottlenecks with automated AI mitigation advice (e.g. Gachibowli Cable Bridge bypass).
+   - Live bottlenecks with automated AI mitigation advice (e.g., Gachibowli Cable Bridge bypass).
 4. **💬 Gemini-Powered Conversational Mobility Copilot**:
    - Telemetry-grounded AI copilot answering dispatch questions like: *"Which vehicle should deliver the Hyderabad orders today?"*
    - Context-grounded recommendations referencing active vehicle capacity, fuel consumption, driver status, and traffic conditions.
@@ -56,8 +57,8 @@ $$\text{Input} \longrightarrow \text{Analyze} \longrightarrow \text{Predict} \lo
          │                       │                        │
          ▼                       ▼                        ▼
 ┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
-│  MongoDB / Store │    │ Google Gemini AI │    │  Leaflet Vector  │
-│  (Mongoose + M)  │    │  (1.5 / Flash)   │    │  Map Integration │
+│ MongoDB / Store  │    │ Google Gemini AI │    │  Leaflet Vector  │
+│(Mongoose/Memory) │    │  (1.5 / Flash)   │    │  Map Integration │
 └──────────────────┘    └──────────────────┘    └──────────────────┘
                                  │
                                  ▼
@@ -74,16 +75,20 @@ $$\text{Input} \longrightarrow \text{Analyze} \longrightarrow \text{Predict} \lo
 ### Prerequisites
 - **Node.js**: v18+ (verified on Node v24)
 - **NPM**: v9+
+- **Git**
 
-### 1. Installation
+### 1. Clone & Installation
 
-Dependencies for both client and server are already pre-installed. If running in a fresh clone:
 ```bash
-# Server dependencies
+# Clone the repository
+git clone https://github.com/parthureddy725/AI-for-Smart-Mobility.git
+cd AI-for-Smart-Mobility
+
+# Install Server dependencies
 cd server
 npm install
 
-# Client dependencies
+# Install Client dependencies
 cd ../client
 npm install
 ```
